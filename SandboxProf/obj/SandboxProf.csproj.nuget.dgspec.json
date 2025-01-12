@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\SandboxProf.csproj": {}
+    "C:\\Users\\LabC.DESKTOP-9EE309P\\Documents\\labs-lenguajes\\SandboxProf\\SandboxProf\\SandboxProf.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\SandboxProf.csproj": {
+    "C:\\Users\\LabC.DESKTOP-9EE309P\\Documents\\labs-lenguajes\\SandboxProf\\SandboxProf\\SandboxProf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\SandboxProf.csproj",
+        "projectUniqueName": "C:\\Users\\LabC.DESKTOP-9EE309P\\Documents\\labs-lenguajes\\SandboxProf\\SandboxProf\\SandboxProf.csproj",
         "projectName": "SandboxProf",
-        "projectPath": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\SandboxProf.csproj",
-        "packagesPath": "C:\\Users\\LabC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\obj\\",
+        "projectPath": "C:\\Users\\LabC.DESKTOP-9EE309P\\Documents\\labs-lenguajes\\SandboxProf\\SandboxProf\\SandboxProf.csproj",
+        "packagesPath": "C:\\Users\\LabC.DESKTOP-9EE309P\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LabC.DESKTOP-9EE309P\\Documents\\labs-lenguajes\\SandboxProf\\SandboxProf\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\LabC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LabC.DESKTOP-9EE309P\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -54,10 +56,6 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.2, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [

@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LabC\\Desktop\\SandboxProf\\",
+  "WorkspaceRootPath": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\sandboxprof\\sandboxprof\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\esteban\\documents\\ucr\\tercer a\u00F1o\\iii semestre\\lenguajes para aplicaciones comerciales\\labs\\labs-lenguajes\\sandboxprof\\sandboxprof\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\sandboxprof\\sandboxprof\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
-      "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\esteban\\documents\\ucr\\tercer a\u00F1o\\iii semestre\\lenguajes para aplicaciones comerciales\\labs\\labs-lenguajes\\sandboxprof\\sandboxprof\\models\\dao\\contactdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\models\\dao\\contactdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\sandboxprof\\sandboxprof\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\esteban\\documents\\ucr\\tercer a\u00F1o\\iii semestre\\lenguajes para aplicaciones comerciales\\labs\\labs-lenguajes\\sandboxprof\\sandboxprof\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\sandboxprof\\sandboxprof\\models\\dao\\studentdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\esteban\\documents\\ucr\\tercer a\u00F1o\\iii semestre\\lenguajes para aplicaciones comerciales\\labs\\labs-lenguajes\\sandboxprof\\sandboxprof\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\esteban\\documents\\ucr\\tercer a\u00F1o\\iii semestre\\lenguajes para aplicaciones comerciales\\labs\\labs-lenguajes\\sandboxprof\\sandboxprof\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\esteban\\documents\\ucr\\tercer a\u00F1o\\iii semestre\\lenguajes para aplicaciones comerciales\\labs\\labs-lenguajes\\sandboxprof\\sandboxprof\\models\\dao\\studentdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\models\\dao\\studentdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\sandboxprof\\sandboxprof\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\esteban\\documents\\ucr\\tercer a\u00F1o\\iii semestre\\lenguajes para aplicaciones comerciales\\labs\\labs-lenguajes\\sandboxprof\\sandboxprof\\models\\domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\models\\domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "SandboxProf\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "SandboxProf\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAALQAAAAAAAAAAAAQwMwAAACAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T19:57:24.857Z",
+              "DocumentIndex": 1,
+              "Title": "ContactDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Models\\DAO\\ContactDAO.cs",
+              "RelativeDocumentMoniker": "SandboxProf\\Models\\DAO\\ContactDAO.cs",
+              "ToolTip": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Models\\DAO\\ContactDAO.cs",
+              "RelativeToolTip": "SandboxProf\\Models\\DAO\\ContactDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T14:16:19.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SandboxProf\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SandboxProf\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC4CAAAAAAAAAAAwwFgCAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-09T14:02:35.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\wwwroot\\js\\site.js",
+              "DocumentMoniker": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "SandboxProf\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\wwwroot\\js\\site.js",
               "RelativeToolTip": "SandboxProf\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwC0AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-09T19:33:29.257Z",
+              "WhenOpened": "2025-01-07T22:42:39.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Models\\DAO\\StudentDAO.cs",
+              "RelativeDocumentMoniker": "SandboxProf\\Models\\DAO\\StudentDAO.cs",
+              "ToolTip": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Models\\DAO\\StudentDAO.cs",
+              "RelativeToolTip": "SandboxProf\\Models\\DAO\\StudentDAO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwB8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T21:50:25.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Models\\Domain\\Student.cs",
+              "RelativeDocumentMoniker": "SandboxProf\\Models\\Domain\\Student.cs",
+              "ToolTip": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Models\\Domain\\Student.cs",
+              "RelativeToolTip": "SandboxProf\\Models\\Domain\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T21:33:51.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "SandboxProf\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\Controllers\\HomeController.cs",
               "RelativeToolTip": "SandboxProf\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAuwCcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T19:33:29.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentDAO.cs",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\Models\\DAO\\StudentDAO.cs",
-              "RelativeDocumentMoniker": "SandboxProf\\Models\\DAO\\StudentDAO.cs",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\Models\\DAO\\StudentDAO.cs",
-              "RelativeToolTip": "SandboxProf\\Models\\DAO\\StudentDAO.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T19:33:29.273Z",
+              "WhenOpened": "2025-01-07T21:27:02.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\appsettings.json",
               "RelativeDocumentMoniker": "SandboxProf\\appsettings.json",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\SandboxProf\\SandboxProf\\appsettings.json",
+              "ToolTip": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer a\u00F1o\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Labs\\labs-lenguajes\\SandboxProf\\SandboxProf\\appsettings.json",
               "RelativeToolTip": "SandboxProf\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-09T19:32:33.003Z",
+              "WhenOpened": "2025-01-07T21:20:12.679Z",
               "EditorCaption": ""
             }
           ]

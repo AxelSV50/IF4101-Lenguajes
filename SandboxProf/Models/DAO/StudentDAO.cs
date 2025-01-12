@@ -1,5 +1,4 @@
-﻿
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using SandboxProf.Models.Domain;
 
 namespace SandboxProf.Models.DAO
@@ -31,7 +30,6 @@ namespace SandboxProf.Models.DAO
 
                 result = command.ExecuteNonQuery();
                 connection.Close();
-
             }
 
             return result;
@@ -40,26 +38,20 @@ namespace SandboxProf.Models.DAO
         public Student Get(string email)
         {
             Student student = new Student();
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand("GetStudentByEmail", connection);
                 command.CommandType = System.Data.CommandType.StoredProcedure;
-
                 command.Parameters.AddWithValue("@Email", email);
-
                 SqlDataReader reader = command.ExecuteReader();
-
-                if (reader.Read())
+                if (reader.Read()) //Asks if a user has been found with the given email
                 {
                     student.Name = reader.GetString(1);
                     student.Email = reader.GetString(2);
                 }
                 connection.Close();
-
             }
-
             return student;
         }
     }

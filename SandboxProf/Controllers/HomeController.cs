@@ -23,13 +23,10 @@ namespace SandboxProf.Controllers
             return View();
         }
 
-
         public IActionResult Insert([FromBody] Student student)
         {
             studentDAO = new StudentDAO(_configuration);
-
-            //Business Rule
-            if (studentDAO.Get(student.Email).Email == null)
+            if(studentDAO.Get(student.Email).Email == null)
             {
                 int result = studentDAO.Insert(student);
                 return Ok(result);
@@ -38,7 +35,6 @@ namespace SandboxProf.Controllers
             {
                 return Error();
             }
-
         }
 
         public IActionResult Privacy()
