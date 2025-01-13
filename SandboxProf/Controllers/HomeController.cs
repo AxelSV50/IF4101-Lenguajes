@@ -23,6 +23,12 @@ namespace SandboxProf.Controllers
             return View();
         }
 
+        /* 
+         * CONVENCIONES
+         * Múltiples sentencias return
+         * Mensajes de error poco específicos y descriptivos
+         * Falta nombrar los métodos con el par verbo-objeto para que sean significativos
+         */
         public IActionResult Insert([FromBody] Student student)
         {
             studentDAO = new StudentDAO(_configuration);

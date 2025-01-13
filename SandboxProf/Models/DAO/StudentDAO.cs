@@ -14,6 +14,12 @@ namespace SandboxProf.Models.DAO
             connectionString = _configuration.GetConnectionString("DefaultConnection");
         }
 
+        /* CONVENCIONES
+         * Métodos Insert & Get tienen más de 7 líneas
+         * Get debería ser -> GetStudentByEmail ó al menos GetByEmail
+           e Insert -> InsertStudent,  para que los nombres sean significativos y usar el par verbo-objeto. 
+         * 
+         */
         public int Insert(Student student)
         {
             int result = 0; //saves 1 or 0 depending on the insertion result

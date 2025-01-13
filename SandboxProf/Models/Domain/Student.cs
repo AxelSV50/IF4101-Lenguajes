@@ -2,6 +2,9 @@
 {
     public class Student
     {
+        /*
+         * Falta la convención de campos privados que inicen con _?
+         */
         private string name;
         private string email;
         private string password;
