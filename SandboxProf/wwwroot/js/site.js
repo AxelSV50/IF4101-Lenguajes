@@ -59,29 +59,6 @@ function Add() {
         });
     }
 }
-function GetNationalities() {
-
-    $.ajax({
-        url: "/Home/GetNationalities",
-        type: "POST",
-        contentType: "application/json;charset=utf-8",
-        dataType: "json",
-        success: function (result) {
-
-            var htmlSelect = ''
-            $.each(result, (key, item) => {
-
-                htmlSelect += '<option value ="' + item.id + '">' + item.name + '</option>';
-            })
-
-            $('#nationality').append(htmlSelect);
-        },
-        error: function (errorMessage) {
-
-        }
-    });
-}
-
 
 function LoadData() {
 
@@ -157,4 +134,51 @@ function DeleteStudent(email) {
         }
     });
 
+}
+
+function GetNationalities() {
+
+    $.ajax({
+        url: "/Home/GetNationalities",
+        type: "POST",
+        contentType: "application/json;charset=utf-8",
+        dataType: "json",
+        success: function (result) {
+
+            var htmlSelect = ''
+            $.each(result, (key, item) => {
+
+                htmlSelect += '<option value ="' + item.id + '">' + item.name + '</option>';
+            })
+
+            $('#nationality').append(htmlSelect);
+        },
+        error: function (errorMessage) {
+
+        }
+    });
+}
+
+
+function GetMajors() {
+
+    $.ajax({
+        url: "/Home/GetNationalities",
+        type: "POST",
+        contentType: "application/json;charset=utf-8",
+        dataType: "json",
+        success: function (result) {
+
+            var htmlSelect = ''
+            $.each(result, (key, item) => {
+
+                htmlSelect += '<option value ="' + item.id + '">' + item.name + '</option>';
+            })
+
+            $('#nationality').append(htmlSelect);
+        },
+        error: function (errorMessage) {
+
+        }
+    });
 }
