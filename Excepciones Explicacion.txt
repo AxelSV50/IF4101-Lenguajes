@@ -1,0 +1,9 @@
+Excepciones
+
+1. Evitar el crash
+2. Determinar como manejar los errores, qué mostrar al usuario, qué flujo seguir, cómo recuperarse luego del crash, etc. 
+
+3. Throw -> Lanza la excepción
+   try/catch -> Atrapa la excepción
+4. MVC -> Servicios (Modelo) -> Lanza excepciones. Reglas de negocio (Controlador) -> Atrapa.
+5. Sus mensajes deben ser significativos y específicos.

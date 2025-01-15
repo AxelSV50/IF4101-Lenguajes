@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>od3hhzt5ws</Fingerprint>
-      <Integrity>XFhwXi8wsT1AFIQODpxmIOhU7T936mRdzhe2hU0QVdU=</Integrity>
+      <Fingerprint>l6wu6amzsv</Fingerprint>
+      <Integrity>k7OPgHD3oiqeCWrkPZ5CoDGyh1p7U52eBwMqkYBHiRM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\templatemo-style.css'))</OriginalItemSpec>
@@ -624,8 +624,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rq5o9xji0p</Fingerprint>
-      <Integrity>E7AZz093afxf3oO6oNy32paOKkp9JuibBz3sKdUpsig=</Integrity>
+      <Fingerprint>uuqmurdnbi</Fingerprint>
+      <Integrity>ihTh7TTionfWrjKErgUxgiSGqmVaWRmntOAy15XHbbk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
