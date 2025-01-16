@@ -624,8 +624,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r0u3x18knm</Fingerprint>
-      <Integrity>u5/vi0n84jhtJmvrpn0Cjai7T3QSoTOKlR/vRGMjjF8=</Integrity>
+      <Fingerprint>ychp4snihq</Fingerprint>
+      <Integrity>IohWW6PRi3QCXjU/WwqZTwFFTePIOkBw2oimgUQ/N7M=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>

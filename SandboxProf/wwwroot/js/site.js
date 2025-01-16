@@ -10,7 +10,7 @@ $(document).ready(() => {
 
     $(document).on('submit', '#student-entry-form', function () {
 
-        if ($('#id').val() == null) {
+        if (!$('#id').val()) {
 
             Add();
         } else {
@@ -18,9 +18,9 @@ $(document).ready(() => {
             UpdateStudent();
         }
         return false;
-    });
-
+    });  
 })
+
 
 function UpdateStudent() {
 
@@ -63,6 +63,8 @@ function UpdateStudent() {
                 $('#email').val('');
                 $('#password').val('');
                 $('#nationality').val($("#nationality option:first").val());
+
+                LoadData();
             },
             error: function (errorMessage) {
                 if (errorMessage === "no connection") {
@@ -71,6 +73,7 @@ function UpdateStudent() {
                 $('#validation').text("User not added");
                 $('#validation').css('color', 'red');
                 $('#password').val('');
+                $('#id').val('');
             }
         });
 
@@ -105,7 +108,6 @@ function Add() {
             dataType: "json",
             success: function (result) {
 
-                //Tarea moral: Separar esto en un método
                 $('#name').val('');
                 $('#email').val('');
                 $('#password').val('');
@@ -113,6 +115,9 @@ function Add() {
                 $('#validation').css('color', 'green');
 
                 $('#nationality').prop('selectedIndex', 0);
+
+                LoadData();
+
             },
             error: function (errorMessage) {
                 $('#password').val('');
@@ -204,25 +209,32 @@ function GetStudentByEmail(email) {
         }
     });
 
+
 }
 
 function DeleteStudent(email) {
 
-    $.ajax({
-        url: "/Home/DeleteStudent",
-        type: "GET",
-        data: { email },
-        contentType: "application/json;charset=utf-8",
-        dataType: "json",
-        success: function (result) {
+    var retVal = confirm("Are you sure you want to delete the selected user?");
+    if (retVal) {
 
-            $('#validation').text("Student deleted succesfully");
-            LoadData();
-        },
-        error: function (errorMessage) {
+        $.ajax({
+            url: "/Home/DeleteStudent",
+            type: "GET",
+            data: { email },
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
 
-            alert(errorMessage.responseText)
-        }
-    });
+                $('#validation').text("Student deleted succesfully");
+                $('#validation').css('color', 'red');
 
+                LoadData();
+            },
+            error: function (errorMessage) {
+
+                alert(errorMessage.responseText)
+            }
+        });
+    } 
 }
+
