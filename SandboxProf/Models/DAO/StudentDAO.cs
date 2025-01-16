@@ -14,6 +14,41 @@ namespace SandboxProf.Models.DAO
             connectionString = _configuration.GetConnectionString("DefaultConnection");
         }
 
+        public int Update(Student student)
+        {
+            int resultToReturn = 0;//it will save 1 or 0 depending on the result of insertion
+            Exception? exception = new Exception();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+
+
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("UpdateStudent", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@Id", student.Id);
+                    command.Parameters.AddWithValue("@Name", student.Name);
+                    command.Parameters.AddWithValue("@Email", student.Email);
+                    command.Parameters.AddWithValue("@Password", student.Password);
+                    command.Parameters.AddWithValue("@Nationality_Id", student.Nationality.Id);
+
+                    resultToReturn = command.ExecuteNonQuery();
+                    connection.Close();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+                throw exception;
+            }
+
+
+            return resultToReturn;
+
+        }
         /* CONVENCIONES
          * Métodos Insert & Get tienen más de 7 líneas
          * Get debería ser -> GetStudentByEmail ó al menos GetByEmail
@@ -66,6 +101,7 @@ namespace SandboxProf.Models.DAO
 
                 if (reader.Read()) //Asks if a user has been found with the given email
                 {
+                    student.Id = reader.GetInt32(0);
                     student.Name = reader.GetString(1);
                     student.Email = reader.GetString(2);
                     student.Nationality = new Nationality(reader.GetInt32(3), null, null);
@@ -90,6 +126,7 @@ namespace SandboxProf.Models.DAO
                 {
                     students.Add(new Student
                     {
+                        Id = (int) sqlDataReader["Id"],
                         Name = sqlDataReader["Name"].ToString(),
                         Email = sqlDataReader["Email"].ToString(),
                         Nationality = new Nationality(0, sqlDataReader["NationalityName"].ToString(), null)
@@ -130,6 +167,8 @@ namespace SandboxProf.Models.DAO
         }
 
     }
+
+
 
 
 }

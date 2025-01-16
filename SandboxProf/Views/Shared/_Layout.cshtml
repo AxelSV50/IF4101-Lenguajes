@@ -196,20 +196,29 @@
 
                 <div class="col-md-offset-1 col-md-4 col-sm-12">
                     <div class="entry-form">
+
                         <h2>Signup today</h2>
-                        <input type="text" name="full name" id="name" class="form-control" placeholder="Full name" required="">
 
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Your email address" required="">
+                        <form action="" id="student-entry-form">
 
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Your password" required="">
+                            <input type="text" name="id" id="id" hidden>
 
-                        <select class="form-control without-margin" name="nationalities" id="nationality">
+                            <input type="text" name="full name" id="name" class="form-control" placeholder="Full name" required="">
+
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Your email address" required="">
+
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Your password" required="">
+
+                            <select class="form-control without-margin" name="nationalities" id="nationality">
+
                             <option value="0" selected>Select your nationality</option>
-                        </select>
 
-                        <button class="submit-btn form-control" onclick="return Add()" id="form-submit">Get started</button>
+                            </select>
+                            <button class="submit-btn form-control" id="form-submit">Get started</button>
 
-                        <label id="validation"></label>
+                            <label id="validation"></label>
+
+                        </form>
                     </div>
                 </div>
 
