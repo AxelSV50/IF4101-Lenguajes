@@ -13,6 +13,8 @@ namespace SandboxProf.Controllers
         private readonly IConfiguration _configuration;
         StudentDAO studentDAO;
         NationalityDAO nationalityDAO;
+        MajorDAO majorsDAO;
+
         public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
         {
             _logger = logger;
@@ -25,7 +27,6 @@ namespace SandboxProf.Controllers
         {
             return View();
         }
-
         /* 
          * CONVENCIONES
          * Múltiples sentencias return
@@ -44,17 +45,12 @@ namespace SandboxProf.Controllers
                 }
                 else
                 {
-                    return Error();
+                    return Error(null);
                 }
             }
-            catch (SqlException e)
+            catch (Exception ex)
             {
-                //TODO enviar el mensaje más específico al frontend, 
-                //Se debe incrustar en el cshtml para mostrarlo
-                ViewBag.Message = e.Message;
-                return View(e.ToString());
-
-                //return Error(e);
+                return Error(ex);
             }
 
         }
@@ -71,17 +67,10 @@ namespace SandboxProf.Controllers
                 studentDAO = new StudentDAO(_configuration);
                 return Ok(studentDAO.Get());
             }
-            catch (SqlException e)
+            catch (Exception ex)
             {
-                //TODO enviar el mensaje más específico al frontend, 
-                //Se debe incrustar en el cshtml para mostrarlo
-                ViewBag.Message = e.Message;
-                return View(e.ToString());
-
-                //return Error(e);
+                return Error(ex);
             }
-
-            return View();
         }
         public IActionResult GetStudentByEmail(string email)
         {
@@ -90,30 +79,13 @@ namespace SandboxProf.Controllers
                 studentDAO = new StudentDAO(_configuration);
                 return Ok(studentDAO.Get(email));
             }
-            catch (SqlException e)
+            catch (Exception ex)
             {
-                //TODO enviar el mensaje más específico al frontend, 
-                //Se debe incrustar en el cshtml para mostrarlo
-                ViewBag.Message = e.Message;
-                return View(e.ToString());
-
-                //return Error(e);
+                return Error(ex);
             }
 
-            return View();
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        public IActionResult GetNationalities()
-        {
-            nationalityDAO = new NationalityDAO(_configuration);
-            
-            return Json(nationalityDAO.Get());
-        }
 
         public IActionResult DeleteStudent(string email)
         {
@@ -123,11 +95,55 @@ namespace SandboxProf.Controllers
 
                 return Ok(studentDAO.Delete(email));
             }
-            catch (SqlException)
+            catch (Exception ex)
             {
-                return Error();
+                return Error(ex);
             }
         }
+        public IActionResult GetNationalities()
+        {
+            try
+            {
+                nationalityDAO = new NationalityDAO(_configuration);
+
+                return Json(nationalityDAO.Get());
+            }
+            catch (Exception ex)
+            {
+                return Error(ex);
+            }
+
+        }
+
+        public IActionResult GetMajors()
+        {
+            try
+            {
+                majorsDAO = new MajorDAO(_configuration);
+                return Json(majorsDAO.Get());
+            }
+            catch (Exception ex)
+            {
+                return Error(ex);
+            }
+
+        }
+
+        public IActionResult Error(Exception exception)
+        {
+            if (exception is SqlException e)
+            {
+                return View(e.Message);
+            }
+
+            return StatusCode(500, new
+            {
+                message = "An unknown error occurred.",
+                details = exception.Message,
+                requestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            });
+        }
+
 
     }
 

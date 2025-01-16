@@ -37,13 +37,13 @@ namespace SandboxProf.Models.DAO
                     command.Parameters.AddWithValue("@email", student.Email);
                     command.Parameters.AddWithValue("password", student.Password);
                     command.Parameters.AddWithValue("@nationality_id", student.Nationality.Id);
+                    command.Parameters.AddWithValue("@major_id", student.Major.Id);
 
                     result = command.ExecuteNonQuery();
                     connection.Close();
                 }
                 catch (SqlException)
                 {
-
                     throw;
                 }
                 
@@ -55,50 +55,66 @@ namespace SandboxProf.Models.DAO
         public Student Get(string email)
         {
             Student student = new Student();
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                connection.Open();
-                SqlCommand command = new SqlCommand("GetStudentByEmail", connection);
-
-                command.CommandType = System.Data.CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@Email", email);
-                SqlDataReader reader = command.ExecuteReader();
-
-                if (reader.Read()) //Asks if a user has been found with the given email
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    student.Name = reader.GetString(1);
-                    student.Email = reader.GetString(2);
-                    student.Nationality = new Nationality(reader.GetInt32(3), null, null);
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("GetStudentByEmail", connection);
+
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@Email", email);
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    if (reader.Read()) //Asks if a user has been found with the given email
+                    {
+                        student.Name = reader.GetString(1);
+                        student.Email = reader.GetString(2);
+                        student.Nationality = new Nationality(reader.GetInt32(3), null, null);
+                    }
+                    connection.Close();
                 }
-                connection.Close();
+                return student;
             }
-            return student;
+            catch (SqlException)
+            {
+                throw;
+            }
         }
 
         public List<Student> Get()
         {
             var students = new List<Student>();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                connection.Open();
-                SqlCommand command = new SqlCommand("GetAllStudents", connection);
-                command.CommandType = System.Data.CommandType.StoredProcedure;
-
-                SqlDataReader sqlDataReader = command.ExecuteReader();
-                while (sqlDataReader.Read())
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    students.Add(new Student
-                    {
-                        Name = sqlDataReader["Name"].ToString(),
-                        Email = sqlDataReader["Email"].ToString(),
-                        Nationality = new Nationality(0, sqlDataReader["NationalityName"].ToString(), null)
-                    });
-                }
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("GetAllStudents", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
 
-                connection.Close();
+                    SqlDataReader sqlDataReader = command.ExecuteReader();
+                    while (sqlDataReader.Read())
+                    {
+                        students.Add(new Student
+                        {
+                            Name = sqlDataReader["Name"].ToString(),
+                            Email = sqlDataReader["Email"].ToString(),
+                            Nationality = new Nationality(0, sqlDataReader["NationalityName"].ToString(), null),
+                            Major = new Major(0, sqlDataReader["MajorName"].ToString(), null)
+                        });
+                    }
+
+                    connection.Close();
+                }
+                return students;
             }
-            return students;
+            catch (SqlException)
+            {
+                throw;
+            }
+            
         }
 
         public int Delete(string email)

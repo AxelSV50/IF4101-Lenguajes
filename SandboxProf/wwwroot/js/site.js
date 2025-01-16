@@ -5,6 +5,7 @@
 
 $(document).ready(() => {
 
+    GetMajors();
     GetNationalities();
     LoadData();
 
@@ -23,10 +24,15 @@ function Add() {
         id: parseInt($('#nationality').val()),
         name: $('#nationality').find('option:selected').text()
     }
+    var major = {
+        id: parseInt($('#major').val()),
+        name: $('#major').find('option:selected').text()
+    }
 
     student.nationality = nationality;
+    student.major = major;
 
-    if (student.name == '' || student.email == '' || student.password == '' || nationality.name == 'Select your nationality') {
+    if (student.name == '' || student.email == '' || student.password == '' || nationality.name == 'Select your nationality' || major.name == 'Select your major') {
         $('#validation').text('Please complete the form');
         $('#validation').css('color', 'red'); 
     } else {
@@ -46,14 +52,16 @@ function Add() {
                 $('#validation').css('color', 'green');
 
                 $('#nationality').prop('selectedIndex', 0);
+                $('#major').prop('selectedIndex', 0);
             },
             error: function (errorMessage) {
-                $('#password').val('');
                 alert(errorMessage.responseText)
                 $('#validation').text("An error occurred");
                 $('#validation').css('color', 'red');
 
+                $('#password').val('');
                 $('#nationality').prop('selectedIndex', 0);
+                $('#major').prop('selectedIndex', 0);
 
             }
         });
@@ -106,6 +114,7 @@ function GetStudentByEmail(email) {
             $('#name').val(result.name);
             $('#email').val(result.email);
             $('#nationality').val(result.nationality.id);
+            $('#major').val(result.major.id);
         },
         error: function (errorMessage) {
             alert(errorMessage.responseText)
@@ -154,6 +163,7 @@ function GetNationalities() {
             $('#nationality').append(htmlSelect);
         },
         error: function (errorMessage) {
+            alert(errorMessage.responseText)
 
         }
     });
@@ -163,7 +173,7 @@ function GetNationalities() {
 function GetMajors() {
 
     $.ajax({
-        url: "/Home/GetNationalities",
+        url: "/Home/GetMajors",
         type: "POST",
         contentType: "application/json;charset=utf-8",
         dataType: "json",
@@ -175,9 +185,10 @@ function GetMajors() {
                 htmlSelect += '<option value ="' + item.id + '">' + item.name + '</option>';
             })
 
-            $('#nationality').append(htmlSelect);
+            $('#major').append(htmlSelect);
         },
         error: function (errorMessage) {
+            alert(errorMessage.responseText)
 
         }
     });
