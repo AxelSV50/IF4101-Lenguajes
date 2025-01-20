@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\sandboxprof\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
-      "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\sandboxprof\\models\\dao\\studentdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\models\\dao\\studentdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\sandboxprof\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\sandboxprof\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|solutionrelative:sandboxprof\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AD07B53-2425-46CA-967D-73D8D1D29400}|SandboxProf\\SandboxProf.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\sandboxprof\\models\\domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\SandboxProf\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "SandboxProf\\Views\\Shared\\_Layout.cshtml",
@@ -42,24 +42,25 @@
               "RelativeToolTip": "SandboxProf\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAL0AAAAAAAAAAAArwNUAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T20:04:44.477Z"
+              "WhenOpened": "2025-01-16T20:04:44.477Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\SandboxProf\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "SandboxProf\\wwwroot\\js\\site.js",
               "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\SandboxProf\\wwwroot\\js\\site.js",
               "RelativeToolTip": "SandboxProf\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAANIAAAAAAAAAAAAqwNoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANIAAAAAAAAAAAAqwOsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-14T19:35:49.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\SandboxProf\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "SandboxProf\\Controllers\\HomeController.cs",
@@ -72,13 +73,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "StudentDAO.cs",
               "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\SandboxProf\\Models\\DAO\\StudentDAO.cs",
               "RelativeDocumentMoniker": "SandboxProf\\Models\\DAO\\StudentDAO.cs",
               "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\SandboxProf\\Models\\DAO\\StudentDAO.cs",
               "RelativeToolTip": "SandboxProf\\Models\\DAO\\StudentDAO.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAD4v3IAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAD4v4kAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T19:18:49.849Z",
               "EditorCaption": ""

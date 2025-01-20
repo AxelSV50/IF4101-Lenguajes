@@ -1,0 +1,6 @@
+@APISandbox_HostAddress = http://localhost:5029
+
+GET {{APISandbox_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
