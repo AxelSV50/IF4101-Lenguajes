@@ -12,15 +12,17 @@ namespace APISandbox.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
-
+        private static IEnumerable<WeatherForecast> weatherForecastArray;
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+            if (weatherForecastArray is null) {
+                weatherForecastArray = GetRandomWeatherForecast();
+
+            }
+
         }
-         
-        //IIS es quien asigna los puertos para correr las apps. En caso de estar ocupado el por defecto, lo reasigna. 
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        private IEnumerable<WeatherForecast> GetRandomWeatherForecast()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
@@ -30,6 +32,14 @@ namespace APISandbox.Controllers
             })
             .ToArray(); // LinQ -> Estilo de C# SQL - Friendly 
         }
+
+        //IIS es quien asigna los puertos para correr las apps. En caso de estar ocupado el por defecto, lo reasigna. 
+        [HttpGet(Name = "GetWeatherForecast")]
+        public IEnumerable<WeatherForecast> Get()
+        {
+            return weatherForecastArray;
+        }
+
         //Action es el nombre del método
         [Route("[action]/{date}")]
         [HttpGet]
@@ -49,6 +59,14 @@ namespace APISandbox.Controllers
         [HttpPost]
         public WeatherForecast Post(WeatherForecast weatherForecast)
         {
+
+            List<WeatherForecast> list = Get().ToList();
+            
+            list.Add(weatherForecast);
+
+            weatherForecastArray = list;
+
+
             return new WeatherForecast
             {
                 Date = weatherForecast.Date,
@@ -73,6 +91,27 @@ namespace APISandbox.Controllers
         [HttpPut]
         public WeatherForecast Put(WeatherForecast weatherForecast)
         {
+
+            List<WeatherForecast> list = Get().ToList();
+            WeatherForecast oldW = new WeatherForecast();
+            foreach (WeatherForecast w in list)
+            {
+                if(w.Date.ToString() == weatherForecast.Date.ToString())
+                {
+                    oldW = w;
+                    list.Remove(oldW);
+                    list.Add(new WeatherForecast
+                    {
+                        Date = weatherForecast.Date,
+                        TemperatureC = weatherForecast.TemperatureC,
+                        Summary = weatherForecast.Summary
+                    });
+                    break;
+                }
+            }
+
+            weatherForecastArray = list;
+
             return new WeatherForecast
             {
                 Date = weatherForecast.Date,

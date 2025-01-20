@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\models\\if4101b97683context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\models\\if4101b97683context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\models\\nationality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\models\\nationality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,26 +34,52 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Nationality.cs",
+              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\Nationality.cs",
+              "RelativeDocumentMoniker": "APISandbox\\Models\\Nationality.cs",
+              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\Nationality.cs",
+              "RelativeToolTip": "APISandbox\\Models\\Nationality.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T22:36:37.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "If4101B97683Context.cs",
+              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\If4101B97683Context.cs",
+              "RelativeDocumentMoniker": "APISandbox\\Models\\If4101B97683Context.cs",
+              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\If4101B97683Context.cs",
+              "RelativeToolTip": "APISandbox\\Models\\If4101B97683Context.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowB0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T22:33:57.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "APISandbox\\WeatherForecast.cs",
               "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\WeatherForecast.cs",
               "RelativeToolTip": "APISandbox\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T20:00:34.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "APISandbox\\Controllers\\WeatherForecastController.cs",
               "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "APISandbox\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAnwE0AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T19:59:44.534Z",
               "EditorCaption": ""
@@ -58,7 +92,7 @@
               "RelativeDocumentMoniker": "APISandbox\\appsettings.json",
               "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\appsettings.json",
               "RelativeToolTip": "APISandbox\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-20T19:59:42.803Z",
               "EditorCaption": ""
