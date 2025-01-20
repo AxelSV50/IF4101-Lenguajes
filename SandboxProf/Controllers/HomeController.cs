@@ -26,6 +26,13 @@ namespace SandboxProf.Controllers
             return View();
         }
 
+        public IActionResult UpdateStudent([FromBody] Student student)
+        {
+            //TODO: handle exception appropriately and send meaningful message to the view
+            studentDAO = new StudentDAO(_configuration);
+            return Ok(studentDAO.Update(student));
+
+        }
         /* 
          * CONVENCIONES
          * Múltiples sentencias return

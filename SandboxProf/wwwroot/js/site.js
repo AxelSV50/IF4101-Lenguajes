@@ -8,7 +8,77 @@ $(document).ready(() => {
     GetNationalities();
     LoadData();
 
+    $(document).on('submit', '#student-entry-form', function () {
+
+        if (!$('#id').val()) {
+
+            Add();
+        } else {
+
+            UpdateStudent();
+        }
+        return false;
+    });  
 })
+
+
+function UpdateStudent() {
+
+    var student = {
+        id: $('#id').val(),
+        name: $('#name').val(),
+        email: $('#email').val(),
+        password: $('#password').val(),
+        nationalityId: parseInt($('#nationality').val())
+
+    };
+
+    var nationality = {
+
+        id: parseInt($('#nationality').val()),
+        name: $('#nationality').find('option:selected').text()
+
+    };
+
+    student.nationality = nationality;
+
+    if (student.name == '' || student.email == '' || student.password == '' || nationality.name == 'Select your nationality') {
+
+        $('#validation').text("Please complete the form");
+        $('#validation').css('color', 'red');
+
+    } else {
+
+        $.ajax({
+            url: "/Home/UpdateStudent",
+            data: JSON.stringify(student), //converte la variable estudiante en tipo json
+            type: "POST",
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                $('#validation').text("Updated successfully");
+                $('#validation').css('color', 'green');
+                $('#name').val('');
+                $('#email').val('');
+                $('#password').val('');
+                $('#nationality').val($("#nationality option:first").val());
+
+                LoadData();
+            },
+            error: function (errorMessage) {
+                if (errorMessage === "no connection") {
+                    $('#validation').text("Error en la conexión.");
+                }
+                $('#validation').text("User not added");
+                $('#validation').css('color', 'red');
+                $('#password').val('');
+                $('#id').val('');
+            }
+        });
+
+    }
+}
 function Add() {
 
     var student = {
@@ -38,7 +108,6 @@ function Add() {
             dataType: "json",
             success: function (result) {
 
-                //Tarea moral: Separar esto en un método
                 $('#name').val('');
                 $('#email').val('');
                 $('#password').val('');
@@ -46,6 +115,9 @@ function Add() {
                 $('#validation').css('color', 'green');
 
                 $('#nationality').prop('selectedIndex', 0);
+
+                LoadData();
+
             },
             error: function (errorMessage) {
                 $('#password').val('');
@@ -126,6 +198,7 @@ function GetStudentByEmail(email) {
         dataType: "json",
         success: function (result) {
 
+            $('#id').val(result.id);
             $('#name').val(result.name);
             $('#email').val(result.email);
             $('#nationality').val(result.nationality.id);
@@ -136,25 +209,32 @@ function GetStudentByEmail(email) {
         }
     });
 
+
 }
 
 function DeleteStudent(email) {
 
-    $.ajax({
-        url: "/Home/DeleteStudent",
-        type: "GET",
-        data: { email },
-        contentType: "application/json;charset=utf-8",
-        dataType: "json",
-        success: function (result) {
+    var retVal = confirm("Are you sure you want to delete the selected user?");
+    if (retVal) {
 
-            $('#validation').text("Student deleted succesfully");
-            LoadData();
-        },
-        error: function (errorMessage) {
+        $.ajax({
+            url: "/Home/DeleteStudent",
+            type: "GET",
+            data: { email },
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
 
-            alert(errorMessage.responseText)
-        }
-    });
+                $('#validation').text("Student deleted succesfully");
+                $('#validation').css('color', 'red');
 
+                LoadData();
+            },
+            error: function (errorMessage) {
+
+                alert(errorMessage.responseText)
+            }
+        });
+    } 
 }
+
