@@ -6,14 +6,23 @@ namespace APISandbox.Models;
 
 public partial class If4101B97683Context : DbContext
 {
+
     public If4101B97683Context()
     {
+
+
+    }
+    private readonly IConfiguration _configuration;
+
+    public If4101B97683Context(IConfiguration configuration)
+    {
+        _configuration = configuration;
     }
 
-    public If4101B97683Context(DbContextOptions<If4101B97683Context> options)
-        : base(options)
-    {
-    }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        => optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
+
 
     public virtual DbSet<ContactInformation> ContactInformations { get; set; }
 
@@ -22,8 +31,6 @@ public partial class If4101B97683Context : DbContext
     public virtual DbSet<Student> Students { get; set; }
 
     //No dejar el DefaultConnection, Add migration, Update Database Nuget Console.
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("DefaultConnection");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

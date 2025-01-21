@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SandboxProf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f4b8d569aba57b95c0b067fa3cab437a1d18c6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9393755344c9ea13d78c0f69b3806d24a98b116d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SandboxProf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SandboxProf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

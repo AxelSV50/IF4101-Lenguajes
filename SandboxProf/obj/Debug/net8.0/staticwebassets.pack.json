@@ -149,6 +149,10 @@
       "PackagePath": "staticwebassets\\js\\smoothscroll.js"
     },
     {
+      "Id": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\SandboxProf\\wwwroot\\js\\studentAPI.js",
+      "PackagePath": "staticwebassets\\js\\studentAPI.js"
+    },
+    {
       "Id": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\SandboxProf\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
