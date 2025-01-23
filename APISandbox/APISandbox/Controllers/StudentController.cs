@@ -33,15 +33,17 @@ namespace APISandbox.Controllers
             }).ToListAsync();
         }
 
-        // GET: api/Student/GetStudent/5
         [HttpGet]
         [Route("[action]/{id}")]
-
         public async Task<ActionResult<Student>> GetStudent(int id)
         {
-            var student = await _context.Students.FindAsync(id);
+            //  var student = await _context.Students.FindAsync(id);
 
-            
+            //  var studentFound =  _context.Students.Where(e => e.Id == id).Include(e => e.Nationality);
+
+
+            var student = await _context.Students.Include(s => s.Nationality)
+            .FirstOrDefaultAsync(s => s.Id == id);
 
             if (student == null)
             {
@@ -50,6 +52,8 @@ namespace APISandbox.Controllers
 
             return student;
         }
+
+
 
         // PUT: api/Student/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -88,7 +92,6 @@ namespace APISandbox.Controllers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         [Route("[action]")]
-
         public async Task<ActionResult<Student>> PostStudent(Student student)
         {
             _context.Students.Add(student);

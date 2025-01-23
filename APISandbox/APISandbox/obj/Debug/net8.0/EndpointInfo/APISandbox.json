@@ -101,6 +101,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Student"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/Student"
@@ -132,6 +137,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Student"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/Student"
@@ -282,6 +292,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/WeatherForecast"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/WeatherForecast"
@@ -330,6 +345,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/WeatherForecast"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/WeatherForecast"
@@ -378,6 +398,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/WeatherForecast"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/WeatherForecast"

@@ -660,8 +660,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>92t1056rbi</Fingerprint>
-      <Integrity>YZ20BqeeqQEZRzapu20DsKb7R3sJe1T4dWababSeTYE=</Integrity>
+      <Fingerprint>wlxx6q1552</Fingerprint>
+      <Integrity>nBkGPeVH1T6gn1OHbytaOktqR7OQr1NEEkM5zzQmIWU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\studentAPI.js'))</OriginalItemSpec>

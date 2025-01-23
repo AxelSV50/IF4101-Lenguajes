@@ -23,12 +23,10 @@ namespace SandboxProf.Controllers
 
                     if (result.IsSuccessStatusCode)
                     {
-                        /*
                         var readTask = result.Content.ReadAsAsync<IList<Student>>();
                         readTask.Wait();
                         //lee los estudiantes provenientes de la API
                         students = readTask.Result;
-                        */
                     }
                     else
                     {
@@ -59,12 +57,10 @@ namespace SandboxProf.Controllers
 
                 if (result.IsSuccessStatusCode)
                 {
-                    /*
                     var readTask = result.Content.ReadAsAsync<Student>();
                     readTask.Wait();
                     //lee el estudiante provenientes de la API
                     student = readTask.Result;
-                    */
 
                     }
                 }
@@ -74,32 +70,29 @@ namespace SandboxProf.Controllers
         }
 
 
-        // POST api/<StudentsController>
         [HttpPost]
-        public IActionResult Post([FromBody] Student student)
+        public async Task<IActionResult> Post([FromBody] Student student)
         {
-
+           
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("https://localhost:7192/api/Student/");
 
-                var postTask = client.PostAsJsonAsync("PostStudent", student);
-                postTask.Wait();
 
-                var result = postTask.Result;
+                // Asegúrate de que la URL esté completa: /api/Student/PostStudent
+                var result = await client.PostAsJsonAsync("PostStudent", student);
 
                 if (result.IsSuccessStatusCode)
                 {
                     return new JsonResult(result);
-                    // TODO: return new JsonResult(student);
                 }
                 else
                 {
-                    // TODO should be customized to meet the client's needs
                     return new JsonResult(result);
                 }
             }
         }
+
 
 
         // PUT api/<StudentsController>/5

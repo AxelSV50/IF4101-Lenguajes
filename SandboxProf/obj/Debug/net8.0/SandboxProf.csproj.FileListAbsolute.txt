@@ -318,3 +318,6 @@ C:\Users\LabC\Desktop\IF4101-Lenguajes\SandboxProf\obj\Debug\net8.0\staticwebass
 C:\Users\LabC\Desktop\IF4101-Lenguajes\SandboxProf\obj\Debug\net8.0\SandboxP.B2BA32CB.Up2Date
 C:\Users\LabC\Desktop\IF4101-Lenguajes\SandboxProf\obj\Debug\net8.0\SandboxProf.genruntimeconfig.cache
 C:\Users\LabC\Desktop\IF4101-Lenguajes\SandboxProf\obj\Debug\net8.0\ref\SandboxProf.dll
+C:\Users\LabC\Desktop\IF4101-Lenguajes\SandboxProf\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\LabC\Desktop\IF4101-Lenguajes\SandboxProf\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\LabC\Desktop\IF4101-Lenguajes\SandboxProf\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

@@ -432,17 +432,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yVEDEivSkkYH0LZDoXZuiUfPOtVXDZiQXgdAd4FczPE="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4507"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yVEDEivSkkYH0LZDoXZuiUfPOtVXDZiQXgdAd4FczPE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Jan 2025 19:08:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SandboxProf/js/studentAPI.92t1056rbi.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\studentAPI.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"92t1056rbi"},{"Name":"integrity","Value":"sha256-YZ20BqeeqQEZRzapu20DsKb7R3sJe1T4dWababSeTYE="},{"Name":"label","Value":"_content/SandboxProf/js/studentAPI.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6893"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YZ20BqeeqQEZRzapu20DsKb7R3sJe1T4dWababSeTYE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Jan 2025 22:36:59 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SandboxProf/js/studentAPI.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\studentAPI.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YZ20BqeeqQEZRzapu20DsKb7R3sJe1T4dWababSeTYE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6893"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YZ20BqeeqQEZRzapu20DsKb7R3sJe1T4dWababSeTYE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Jan 2025 22:36:59 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nBkGPeVH1T6gn1OHbytaOktqR7OQr1NEEkM5zzQmIWU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6910"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022nBkGPeVH1T6gn1OHbytaOktqR7OQr1NEEkM5zzQmIWU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 23 Jan 2025 22:21:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SandboxProf/js/studentAPI.wlxx6q1552.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\studentAPI.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wlxx6q1552"},{"Name":"integrity","Value":"sha256-nBkGPeVH1T6gn1OHbytaOktqR7OQr1NEEkM5zzQmIWU="},{"Name":"label","Value":"_content/SandboxProf/js/studentAPI.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6910"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022nBkGPeVH1T6gn1OHbytaOktqR7OQr1NEEkM5zzQmIWU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 23 Jan 2025 22:21:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SandboxProf/lib/bootstrap/dist/css/bootstrap-grid.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

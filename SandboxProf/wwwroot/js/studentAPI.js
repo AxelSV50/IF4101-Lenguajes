@@ -173,8 +173,8 @@ function LoadData() {
                 htmlTable += '<td>' + item.name + '</td>';
                 htmlTable += '<td>' + item.email + '</td>';
                 htmlTable += '<td>' + item.nationality.name + '</td>';
-                htmlTable += '<td>' + '<a href = "#about" onclick = "GetById(\'' + item.id + '\')"> Edit </a> |' +
-                    '<a href = "#about" onclick = "Delete(\'' + item.id + '\')"> Delete </a>' + '</td>';
+                htmlTable += '<td>' + '<a href = "#about" onclick = "GetStudentById(\'' + item.id + '\')"> Edit </a> |' +
+                    '<a href = "#about" onclick = "DeleteStudent(\'' + item.id + '\')"> Delete </a>' + '</td>';
                 htmlTable += "</tr>";
 
             });
@@ -190,12 +190,12 @@ function LoadData() {
 }
 
 //NO TIENE MÉTODO EN EL 
-function GetStudentByEmail(email) {
+function GetStudentById(id) {
 
     $.ajax({
         url: "/Student/GetById",
         type: "GET",
-        data: { email },
+        data: { id },
         contentType: "application/json;charset=utf-8",
         dataType: "json",
         success: function (result) {
@@ -214,17 +214,16 @@ function GetStudentByEmail(email) {
 
 }
 
-function DeleteStudent(email) {
+function DeleteStudent(id) {
 
     var retVal = confirm("Are you sure you want to delete the selected user?");
     if (retVal) {
 
         $.ajax({
-            url: "/Student/Delete",
-            type: "POST",
-            data: { id },
+            url: "/Student/Delete?id="+id,
+            type: "DELETE",
             contentType: "application/json;charset=utf-8",
-            dataType: "json",
+            dataType: "json", //TODO verificar si es necesario
             success: function (result) {
 
                 $('#validation').text("Student deleted succesfully");
