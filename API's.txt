@@ -1,0 +1,9 @@
+API's
+
+** Conjunto de funciones y procedimientos para ser utilizadas por otros softwares. Interfaz que conecta dos o más sistemas. 
+
+** REST: Representational State Transfer. Arquitectura que conecta varios sistemas por medio de HTTP. Devuelve los datos en formatos muy específicos como XML y JSON. Proporciona identificadores únicos (URI).
+
+** SOAP: Arq. dividida por niveles. Más complicada de implementar. Usa sólo XML. 
+
+** API == Web Service: No todas las API's son servicios web porque no todas están en internet. Pero todos los servicios web son API's.

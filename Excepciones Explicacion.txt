@@ -6,4 +6,4 @@ Excepciones
 3. Throw -> Lanza la excepción
    try/catch -> Atrapa la excepción
 4. MVC -> Servicios (Modelo) -> Lanza excepciones. Reglas de negocio (Controlador) -> Atrapa.
-5. Sus mensajes deben ser significativos y específicos.
+5. Sus mensajes deben ser significativos y específicos. 

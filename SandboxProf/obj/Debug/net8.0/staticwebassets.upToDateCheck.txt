@@ -34,6 +34,7 @@ wwwroot\js\jquery.js
 wwwroot\js\owl.carousel.min.js
 wwwroot\js\site.js
 wwwroot\js\smoothscroll.js
+wwwroot\js\studentAPI.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
