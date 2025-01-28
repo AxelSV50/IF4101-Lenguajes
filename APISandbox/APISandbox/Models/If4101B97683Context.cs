@@ -6,13 +6,11 @@ namespace APISandbox.Models;
 
 public partial class If4101B97683Context : DbContext
 {
+    private readonly IConfiguration _configuration;
 
     public If4101B97683Context()
     {
-
-
     }
-    private readonly IConfiguration _configuration;
 
     public If4101B97683Context(IConfiguration configuration)
     {
@@ -20,17 +18,19 @@ public partial class If4101B97683Context : DbContext
     }
 
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
-
 
     public virtual DbSet<ContactInformation> ContactInformations { get; set; }
+
+    public virtual DbSet<Course> Courses { get; set; }
+
+    public virtual DbSet<GetAllStudentsView> GetAllStudentsViews { get; set; }
 
     public virtual DbSet<Nationality> Nationalities { get; set; }
 
     public virtual DbSet<Student> Students { get; set; }
 
-    //No dejar el DefaultConnection, Add migration, Update Database Nuget Console.
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        => optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -47,6 +47,28 @@ public partial class If4101B97683Context : DbContext
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<Course>(entity =>
+        {
+            entity.ToTable("Course");
+
+            entity.Property(e => e.Code).HasMaxLength(50);
+            entity.Property(e => e.Description).HasMaxLength(100);
+            entity.Property(e => e.Name).HasMaxLength(50);
+        });
+
+        modelBuilder.Entity<GetAllStudentsView>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("GetAllStudentsView");
+
+            entity.Property(e => e.Email).HasMaxLength(50);
+            entity.Property(e => e.Name).HasMaxLength(50);
+            entity.Property(e => e.NationalityId).HasColumnName("Nationality_Id");
+            entity.Property(e => e.NationalityName).HasMaxLength(50);
+            entity.Property(e => e.Password).HasMaxLength(50);
         });
 
         modelBuilder.Entity<Nationality>(entity =>

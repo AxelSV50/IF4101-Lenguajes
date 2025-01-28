@@ -1,5 +1,6 @@
 ﻿using APISandbox.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace APISandbox.Controllers
@@ -40,7 +41,6 @@ namespace APISandbox.Controllers
             //  var student = await _context.Students.FindAsync(id);
 
             //  var studentFound =  _context.Students.Where(e => e.Id == id).Include(e => e.Nationality);
-
 
             var student = await _context.Students.Include(s => s.Nationality)
             .FirstOrDefaultAsync(s => s.Id == id);
@@ -94,6 +94,8 @@ namespace APISandbox.Controllers
         [Route("[action]")]
         public async Task<ActionResult<Student>> PostStudent(Student student)
         {
+
+            //TODO reconstruir el objeto estudiante y agregar los atributos faltantes. 
             _context.Students.Add(student);
             await _context.SaveChangesAsync();
 
@@ -121,5 +123,103 @@ namespace APISandbox.Controllers
         {
             return _context.Students.Any(e => e.Id == id);
         }
+
+
+        //----------------------------------------------\\
+
+        [Route("[action]")]
+        [HttpGet]
+        public IActionResult GetAllStudentsSP()
+        {
+            var students = _context.Students
+                             .FromSqlRaw($"GetAllStudentsSP")
+                             .AsEnumerable();
+
+            return Ok(students);
+        }
+
+        [Route("[action]/{email}")]
+        [HttpGet]
+        public IActionResult GetStudentSP(string email)
+        {
+
+            var studentEmail = new SqlParameter("@Email", email);
+            var student = _context.Students
+                           .FromSqlRaw($"GetStudentByEmailSP @Email", studentEmail)
+                           .AsEnumerable().Single();
+
+            if (student == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(student);
+        }
+
+
+
+        [Route("[action]")]
+        [HttpPut]
+        public IActionResult PutStudentSP(Student student)
+        {
+
+            var result = _context.Database.ExecuteSqlRaw("UpdateStudentSP {0}, {1}, {2}, {3}, {4}",
+                                student.Id,
+                                student.Name,
+                                student.Email,
+                                student.Password,
+                                student.NationalityId);
+            if (result == 0)
+            {
+                return null;
+            }
+
+            return Ok(result);
+        }
+
+
+        [Route("[action]")]
+        [HttpPost]
+        public IActionResult PostStudentSP(Student student)
+        {
+
+            var result = _context.Database.ExecuteSqlRaw("InsertStudentSP {0}, {1}, {2}, {3}, {4}",
+                                student.Name,
+                                student.Email,
+                                student.Password,
+                                student.NationalityId);
+            if (result == 0)
+            {
+                return null;
+            }
+
+            return Ok(result);
+
+        }
+
+        [Route("[action]/{email}")]
+        [HttpDelete]
+
+        public IActionResult DeleteStudentSP(string email)
+        {
+            var result = _context.Database.ExecuteSqlRaw("DeleteStudentSP {0}", email);
+            if (result == 0)
+            {
+                return null;
+            }
+
+            return Ok(result);
+        }
+
+        [Route("[action]")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Student>>> GetAllStudentsView()
+        {
+            var allStudents = await _context.GetAllStudentsViews.ToListAsync();
+
+            return Ok(allStudents);
+        }
     }
+
+
 }

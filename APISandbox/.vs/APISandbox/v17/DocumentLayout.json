@@ -7,28 +7,12 @@
       "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\models\\if4101b97683context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\models\\if4101b97683context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\models\\nationality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\models\\nationality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|c:\\users\\labc\\desktop\\if4101-lenguajes\\apisandbox\\apisandbox\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DACE578-588E-4643-9DD6-B9169D5E453B}|APISandbox\\APISandbox.csproj|solutionrelative:apisandbox\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,34 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Nationality.cs",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\Nationality.cs",
-              "RelativeDocumentMoniker": "APISandbox\\Models\\Nationality.cs",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\Nationality.cs",
-              "RelativeToolTip": "APISandbox\\Models\\Nationality.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T21:45:13.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "APISandbox\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\Student.cs",
-              "RelativeToolTip": "APISandbox\\Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T20:11:24.666Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -74,61 +32,35 @@
               "RelativeDocumentMoniker": "APISandbox\\Controllers\\StudentController.cs",
               "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Controllers\\StudentController.cs",
               "RelativeToolTip": "APISandbox\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowBUAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwCUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T20:05:58.333Z",
+              "WhenOpened": "2025-01-27T20:35:53.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "APISandbox\\Models\\Course.cs",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\Course.cs",
-              "RelativeToolTip": "APISandbox\\Models\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Program.cs",
+              "RelativeDocumentMoniker": "APISandbox\\Program.cs",
+              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Program.cs",
+              "RelativeToolTip": "APISandbox\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T19:11:01.473Z",
+              "WhenOpened": "2025-01-27T20:33:48.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "APISandbox\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\WeatherForecast.cs",
-              "RelativeToolTip": "APISandbox\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAATAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "If4101B97683Context.cs",
+              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\If4101B97683Context.cs",
+              "RelativeDocumentMoniker": "APISandbox\\Models\\If4101B97683Context.cs",
+              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Models\\If4101B97683Context.cs",
+              "RelativeToolTip": "APISandbox\\Models\\If4101B97683Context.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCIAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T20:00:34.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "APISandbox\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "APISandbox\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAB2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T19:59:44.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\appsettings.json",
-              "RelativeDocumentMoniker": "APISandbox\\appsettings.json",
-              "ToolTip": "C:\\Users\\LabC\\Desktop\\IF4101-Lenguajes\\APISandbox\\APISandbox\\appsettings.json",
-              "RelativeToolTip": "APISandbox\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-20T19:59:42.803Z",
+              "WhenOpened": "2025-01-27T20:32:49.394Z",
               "EditorCaption": ""
             }
           ]

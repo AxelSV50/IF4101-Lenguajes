@@ -1,0 +1,12 @@
+Node.js -> 
+**Interactuar con el SO (archivos, red)
+**Permite correr JS sin necesidad de un navegador.
+**Ejecuta JS en modo servidor
+
+**Funcionamiento:
+*** Código -> Motor V8 (mismo motor que Chrome)-> Bindings -> LIBUV, HTTP
+
+**Node.js vs Navegador 
+***JS-> Motor V8 -> WEBAPI -> LIBEVENT
+
+NPM -> Node Package Manager

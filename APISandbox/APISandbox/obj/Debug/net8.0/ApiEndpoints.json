@@ -17,6 +17,52 @@
   },
   {
     "ContainingType": "APISandbox.Controllers.StudentController",
+    "Method": "DeleteStudentSP",
+    "RelativePath": "api/Student/DeleteStudentSP/{email}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISandbox.Controllers.StudentController",
+    "Method": "GetAllStudentsSP",
+    "RelativePath": "api/Student/GetAllStudentsSP",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISandbox.Controllers.StudentController",
+    "Method": "GetAllStudentsView",
+    "RelativePath": "api/Student/GetAllStudentsView",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[APISandbox.Models.Student, APISandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APISandbox.Controllers.StudentController",
     "Method": "GetStudent",
     "RelativePath": "api/Student/GetStudent/{id}",
     "HttpMethod": "GET",
@@ -63,6 +109,22 @@
   },
   {
     "ContainingType": "APISandbox.Controllers.StudentController",
+    "Method": "GetStudentSP",
+    "RelativePath": "api/Student/GetStudentSP/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISandbox.Controllers.StudentController",
     "Method": "PostStudent",
     "RelativePath": "api/Student/PostStudent",
     "HttpMethod": "POST",
@@ -89,6 +151,22 @@
   },
   {
     "ContainingType": "APISandbox.Controllers.StudentController",
+    "Method": "PostStudentSP",
+    "RelativePath": "api/Student/PostStudentSP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "student",
+        "Type": "APISandbox.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISandbox.Controllers.StudentController",
     "Method": "PutStudent",
     "RelativePath": "api/Student/PutStudent/{id}",
     "HttpMethod": "PUT",
@@ -100,6 +178,22 @@
         "Type": "System.Int32",
         "IsRequired": true
       },
+      {
+        "Name": "student",
+        "Type": "APISandbox.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISandbox.Controllers.StudentController",
+    "Method": "PutStudentSP",
+    "RelativePath": "api/Student/PutStudentSP",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
         "Name": "student",
         "Type": "APISandbox.Models.Student",

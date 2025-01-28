@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APISandbox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa83e63d7fc0865650044b0c564f2de4aab6916c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+548702a7a39c90dafce0176ec16e9bbae2831b0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("APISandbox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APISandbox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
